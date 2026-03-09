@@ -2993,7 +2993,7 @@ input, select, textarea {
 				  }
 				}
 				@media screen and (max-width: 768px) {
-
+	
 				  header.topbar nav {
 				    display: none;
 				  }
@@ -3046,8 +3046,171 @@ input, select, textarea {
 				    padding: 0.8rem 1.5rem;
 				    font-size: 1.1rem;
 				  }
-				}
-				
 				.hamburger {
 				  display: none;
 				}
+					.topbar,
+					.green-bar, footer .green-bar {
+					  padding: 0.8rem 1rem !important;
+					  min-height: auto;
+					}
+					
+					.topbar .button,
+					.green-bar a.button.cta-primary {
+					  padding: 0.7rem 1.2rem;
+					  font-size: 1.1rem;
+					}
+					
+					.green-bar p, .green-bar span {
+					  font-size: 0.95rem;
+					  margin: 0.3rem 0;
+					}
+					.major h2, .section-title, #banner h2, h2, h3 {
+					    font-size: 1.6rem !important;
+					    line-height: 1.2;
+					    word-wrap: break-word;
+					    hyphens: auto;
+					    text-align: center;
+					    margin: 1rem 0 0.8rem;
+					  }
+					
+					  .major p, .banner-sub {
+					    font-size: 1rem;
+					    line-height: 1.5;
+					  }
+					.features {
+					    flex-direction: column;
+					    gap: 1.5rem;
+					  }
+					  .feature {
+					    text-align: center;
+					    padding: 1.2rem;
+					    border-radius: 12px;
+					    background: var(--bg-card);
+					    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+					  }
+					  .feature .icon {
+					    font-size: 2.8rem;
+					    margin-bottom: 0.8rem;
+					    color: var(--accent-primary);
+					  }
+						.service-grid, .service-grid .service-card {
+						    flex-direction: column;
+						    width: 100% !important;
+						  }
+						  .service-card img {
+						    width: 100%;
+						    height: auto;
+						    border-radius: 10px 10px 0 0;
+						    object-fit: cover;
+						  }
+						  .service-card {
+						    background: var(--bg-card);
+						    border-radius: 12px;
+						    overflow: hidden;
+						    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+						    transition: transform 0.2s;
+						  }
+						  .service-card:hover {
+						    transform: translateY(-5px);
+						  }
+						.service-card p, .feature p, .price-card li span:first-child {
+						  font-size: 0.95rem;
+						  line-height: 1.5;
+						  margin: 0.6rem 0;
+						  hyphens: auto;
+						  word-break: break-word;
+						}
+					.price-card {
+						  background: var(--bg-card);
+						  padding: 1.5rem;
+						  border-radius: 12px;
+						}
+						
+						.price-card h3 {
+						  border-bottom: 2px solid var(--accent-primary);
+						  padding-bottom: 0.6rem;
+						  margin-bottom: 1rem;
+						  font-size: 1.4rem;
+						}
+						
+						.price-card ul li {
+						  display: flex;
+						  justify-content: space-between;
+						  flex-wrap: wrap;
+						  padding: 0.7rem 0;
+						  border-bottom: 1px solid rgba(255,255,255,0.08);
+						}
+						
+						.price-card ul li span:last-child {
+						  color: var(--accent-primary);
+						  font-weight: bold;
+						  white-space: nowrap;
+						}
+						#projects .major h2 {
+						  position: relative;
+						  text-align: center;
+						}
+						
+						#projects .major h2::before,
+						#projects .major h2::after {
+						  content: '';
+						  position: absolute;
+						  top: 50%;
+						  width: 30%;
+						  height: 2px;
+						  background: var(--accent-primary);
+						}
+						
+						#projects .major h2::before { left: 0; }
+						#projects .major h2::after  { right: 0; }
+						
+						@media (max-width: 768px) {
+						  #projects .major h2 {
+						    font-size: 1.7rem;
+						  }
+						  #projects .major h2::before, #projects .major h2::after {
+						    width: 20%;
+						  }
+						
+						  .projects-grid {
+						    flex-direction: column;
+						    gap: 1.5rem;
+						  }
+						  .project-card img {
+						    width: 100% !important;
+						    height: auto;
+						    border-radius: 10px;
+						  }
+						#reviews .testimonials {
+						  max-width: 90%;
+						  margin: 0 auto;
+						  overflow: hidden;
+						}
+						
+						@media (max-width: 768px) {
+						  .testimonial {
+						    padding: 1.2rem;
+						    margin: 1rem 0;
+						    border-radius: 12px;
+						    background: var(--bg-card);
+						    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+						    text-align: center;
+						  }
+						  .testimonial p {
+						    font-size: 0.95rem;
+						    line-height: 1.6;
+						  }
+						  .stars { font-size: 1.4rem; }
+						
+						  footer .row, .contact-info {
+						    flex-direction: column;
+						    text-align: center;
+						    gap: 1rem;
+						  }
+						  footer address, footer p, footer a {
+						    font-size: 0.95rem;
+						    line-height: 1.6;
+						  }
+						  footer .icons { justify-content: center; }
+						}
