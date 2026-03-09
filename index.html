@@ -23,6 +23,8 @@
 		
 		<header class="topbar">
 			<div class="container nav-flex">
+				<button class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('show')">☰</button>
+				
 				<nav>
 					<a  href="#banner">Potrzebujesz wsparcia?</a>
 					<a href="#why-us">Dlaczego właśnie my?</a>
@@ -34,6 +36,16 @@
 				</nav>
 				<a href="tel:123456789" class="button">Zadzwoń</a><div class="bg-icon" style="--i:3">🚘</div>
  			</div>
+			<!-- Mobile vertical menu -->
+			  <div class="mobile-menu">
+				<a href="#banner">Potrzebujesz wsparcia?</a>
+				<a href="#why-us">Dlaczego właśnie my?</a>
+				<a href="#services">Nasze usługi</a>
+				<a href="#prices">Cennik</a>
+				<a href="#projects">Przykładowe realizacje</a>
+				<a href="#reviews">Klienci, którzy nam zaufali</a>
+				<a href="#footer">Kontakt</a>
+			  </div>
 		</header>
 
 		<div id="page-wrapper">
@@ -527,4 +539,5 @@
 			<img id="lightbox-img" src="">
 </div>
 	</body>
+
 </html>
